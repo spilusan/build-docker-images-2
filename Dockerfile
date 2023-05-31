@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL "Author"="Nelson Pilusan"
+LABEL "Author"="Nelson T Pilusan"
 LABEL "Project"="nano"
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install apache2 -y
