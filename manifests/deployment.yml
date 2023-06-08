@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: app1nginx 
+  name: forimages 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app1nginx
+      app: forimages
   template:
     metadata:
       labels:
-        app: app1nginx 
+        app: forimages 
     spec:
       containers:
-        - name: app1nginx 
-          image: aksdevopsss.azurecr.io/app1nginx
+        - name: forimages 
+          image: aksdevops2.azurecr.io/forimages
           ports:
           - containerPort: 80
