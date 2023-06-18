@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: forimages
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80 
+    selector:
+        app: forimages
