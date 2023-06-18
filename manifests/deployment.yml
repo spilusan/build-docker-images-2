@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: fordeploy 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fordeploy
+  template:
+    metadata:
+      labels:
+        app: fordeploy 
+    spec:
+      containers:
+        - name: fordeploy 
+          image: nelson1.azurecr.io/fordeploy
+          ports:
+          - containerPort: 80
