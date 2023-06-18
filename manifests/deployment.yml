@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nelson1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nelson1
+  template:
+    metadata:
+      labels:
+        app: nelson1 
+    spec:
+      containers:
+        - name: nelson1 
+          image: nelson1.azurecr.io/nelson1
+          ports:
+          - containerPort: 80
