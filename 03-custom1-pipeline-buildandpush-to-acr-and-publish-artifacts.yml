@@ -11,10 +11,11 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '4f3e215b-a79d-4660-8314-fe0971f3d339'
-  imageRepository: 'custom1aksnginxapp1'
-  containerRegistry: 'aksdevopss.azurecr.io'
+  imageRepository: 'fordeploy'
+  containerRegistry: 'nelson1.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
+  imagePullSecret: 'nelson11247ce76-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
